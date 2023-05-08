@@ -36,8 +36,9 @@ a {
 
 /* fix for expanding arrow on mobile */
 @media (max-width: 767px) {
-  details summary::-webkit-details-marker {
-    transform: none;
+  details summary::-webkit-details-marker,
+  details summary::before {
     font-size: inherit;
+    transform: none !important;
   }
 }
