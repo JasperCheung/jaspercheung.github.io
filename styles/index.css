@@ -33,3 +33,11 @@ a {
     color:#0ccc68;
     background-color: #000000;
 }
+
+fix for expanding arrow on mobile
+@media (max-width: 767px) {
+  details summary::-webkit-details-marker {
+    transform: none;
+    font-size: inherit;
+  }
+}
